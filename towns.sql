@@ -13,3 +13,12 @@ CREATE TABLE states (
    name VARCHAR(20),
    PRIMARY KEY (state_num)
 );
+
+CREATE TABLE people (
+ state_num TINYINT NOT NULL,
+ county_num SMALLINT NOT NULL,
+   state VARCHAR(20),
+   county VARCHAR(64),
+   population INTEGER
+ );
+
