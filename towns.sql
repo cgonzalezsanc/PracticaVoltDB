@@ -22,3 +22,5 @@ CREATE TABLE people (
    population INTEGER
  );
 
+PARTITION TABLE towns ON COLUMN state_num;
+PARTITION TABLE people ON COLUMN state_num;
