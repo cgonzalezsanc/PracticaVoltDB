@@ -7,4 +7,9 @@ CREATE TABLE towns (
    elevation INTEGER
 );
 
-
+CREATE TABLE states (
+   abbreviation VARCHAR(20),
+   state_num TINYINT,
+   name VARCHAR(20),
+   PRIMARY KEY (state_num)
+);
