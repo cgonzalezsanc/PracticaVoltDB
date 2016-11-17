@@ -14,6 +14,9 @@ CREATE TABLE states (
    PRIMARY KEY (state_num)
 );
 
+CREATE INDEX town_idx ON towns (state_num, county_num);
+CREATE INDEX people_idx ON people (state_num, county_num);
+
 CREATE TABLE people (
  state_num TINYINT NOT NULL,
  county_num SMALLINT NOT NULL,
