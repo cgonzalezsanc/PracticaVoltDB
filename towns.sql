@@ -44,3 +44,13 @@ CREATE TABLE nws_event (
 
 CREATE INDEX nws_event_idx ON nws_event (id);
 
+
+CREATE TABLE local_event (
+    state_num TINYINT NOT NULL,
+    county_num SMALLINT NOT NULL,
+    id VARCHAR(256) NOT NULL
+);
+
+CREATE INDEX local_event_idx ON local_event (state_num, county_num);
+ 
+PARTITION TABLE local_event ON COLUMN state_num;
