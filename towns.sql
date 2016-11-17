@@ -44,7 +44,6 @@ CREATE TABLE nws_event (
 
 CREATE INDEX nws_event_idx ON nws_event (id);
 
-
 CREATE TABLE local_event (
     state_num TINYINT NOT NULL,
     county_num SMALLINT NOT NULL,
@@ -54,3 +53,19 @@ CREATE TABLE local_event (
 CREATE INDEX local_event_idx ON local_event (state_num, county_num);
  
 PARTITION TABLE local_event ON COLUMN state_num;
+
+CREATE PROCEDURE FindAlert AS
+   SELECT id, updated FROM nws_event
+   WHERE id = ?;
+
+CREATE PROCEDURE FROM CLASS LoadAlert;
+
+CREATE PROCEDURE GetAlertsByLocation 
+   PARTITION ON TABLE local_event COLUMN state_num
+   AS SELECT w.id, w.summary, w.type, w.severity,
+             w.starttime, w.endtime 
+             FROM nws_event as w, local_event as l
+             WHERE l.id=w.id and 
+                   l.state_num=? and l.county_num = ? and
+                   w.endtime > TO_TIMESTAMP(MILLISECOND,?)
+             ORDER BY w.endtime;
