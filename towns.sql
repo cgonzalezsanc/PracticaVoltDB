@@ -30,3 +30,17 @@ PARTITION TABLE people ON COLUMN state_num;
 
 ALTER TABLE towns DROP COLUMN state;
 ALTER TABLE people DROP COLUMN state;
+
+CREATE TABLE nws_event (
+   id VARCHAR(256) NOT NULL,
+   type VARCHAR(128),
+   severity VARCHAR(128),
+   SUMMARY VARCHAR(1024),
+   starttime TIMESTAMP,
+   endtime TIMESTAMP,
+   updated TIMESTAMP,
+   PRIMARY KEY (id)
+);
+
+CREATE INDEX nws_event_idx ON nws_event (id);
+
