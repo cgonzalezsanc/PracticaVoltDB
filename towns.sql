@@ -7,4 +7,11 @@ CREATE TABLE towns (
    elevation INTEGER
 );
 
+CREATE TABLE people (
+ state_num TINYINT NOT NULL,
+ county_num SMALLINT NOT NULL,
+   state VARCHAR(20),
+   county VARCHAR(64),
+   population INTEGER
+ );
 
