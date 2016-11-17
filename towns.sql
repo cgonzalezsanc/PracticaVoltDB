@@ -27,3 +27,6 @@ CREATE TABLE people (
 
 PARTITION TABLE towns ON COLUMN state_num;
 PARTITION TABLE people ON COLUMN state_num;
+
+ALTER TABLE towns DROP COLUMN state;
+ALTER TABLE people DROP COLUMN state;
