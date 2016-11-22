@@ -14,7 +14,7 @@ public class estadosSeveridad extends VoltProcedure {
   public VoltTable[] run(string severidad)
       throws VoltAbortException {
 
-          voltQueueSQL( estadosSeveridad, severidad );
+          voltQueueSQL( consigueEstado, severidad );
           return voltExecuteSQL();
 
       }
