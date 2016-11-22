@@ -26,4 +26,8 @@ PARTITION ON TABLE people COLUMN state_num
 FROM CLASS UpdatePeople;
 
 
+## Procedimientos almacenados
 
+### estadosSeveridad
+
+Procedimiento que devuelve el nombre de los estados que tengan la severidad que se pase como argumento del procedimiento. Será necesario realizar el procedimiento anterior para ejecutarlo, es decir, compilar el código con `javac`, envolverlo con `jar`, cargarlo con un `load classes` y añadirlo al schema mediante `CREATE PROCEDURE FROM CLASS estadosSeveridad`.
