@@ -11,7 +11,7 @@ public class estadosSeveridad extends VoltProcedure {
 	+ " ON local_event.state_num=states.state_num"
 	+ " WHERE nws_event.severity LIKE ?;");
 
-  public VoltTable[] run(string severidad)
+  public VoltTable[] run(String severidad)
       throws VoltAbortException {
 
           voltQueueSQL( consigueEstado, severidad );
