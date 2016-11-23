@@ -10,7 +10,7 @@ public class eventosEstado2013 extends voltProcedure {
 		+ "ON LOCAL.id = NWS.id"
 		+ "JOIN states AS S"
 		+ "ON S.state_num = LOCAL.state_num"
-		+ "WHERE (NWS.starttime > '2013-01-01' AND NWS.endtime < '2013-12-31 AND S.state_num = ?);"
+		+ "WHERE (NWS.starttime > '2013-01-01' AND NWS.endtime < '2013-12-31' AND S.state_num = ?);"
 		);
 
 	public VolTable[] run(String estado)
