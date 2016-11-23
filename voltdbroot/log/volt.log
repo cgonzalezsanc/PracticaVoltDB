@@ -288,3 +288,317 @@
 2016-11-23 05:27:28,920   INFO  [main] HOST: RSS limit: 80% (12,44 GB)
 2016-11-23 05:27:28,945   INFO  [main] CONSOLE: Server Operational State is: NORMAL
 2016-11-23 05:27:28,945   INFO  [main] CONSOLE: Server completed initialization.
+2016-11-23 07:07:54,300   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:54,301   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE TABLE towns (
+   town VARCHAR(64),
+   state VARCHAR(2),
+   state_num TINYINT NOT NULL,
+   county VARCHAR(64),
+   county_num SMALLINT NOT NULL,
+   elevation INTEGER
+)
+2016-11-23 07:07:54,448   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923216383, catalog hash 0415329BDC, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:54,448   INFO  [MP Site - 0:8] HOST: To: catalog hash: D364284508, deployment hash: 5B9E08EC78
+2016-11-23 07:07:54,474   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:54,474   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:54,474   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:54,475   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:54,475   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:54,475   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:54,475   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:54,487   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:54,488   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:54,489   INFO  [SP 2 Site - 0:2] HOST: Globally updating the current application catalog and deployment (new hashes D364284508, 5B9E08EC78).
+2016-11-23 07:07:54,523   INFO  [SP 2 Site - 0:2] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:54,523   INFO  [SP 2 Site - 0:2] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:54,559   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:54,560   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE TABLE states (
+   abbreviation VARCHAR(20),
+   state_num TINYINT,
+   name VARCHAR(20),
+   PRIMARY KEY (state_num)
+)
+2016-11-23 07:07:54,610   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923232767, catalog hash D364284508, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:54,610   INFO  [MP Site - 0:8] HOST: To: catalog hash: 7257FEC6C3, deployment hash: 5B9E08EC78
+2016-11-23 07:07:54,615   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:54,615   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:54,615   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:54,615   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:54,615   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:54,616   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:54,616   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:54,626   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:54,627   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:54,627   INFO  [SP 4 Site - 0:4] HOST: Globally updating the current application catalog and deployment (new hashes 7257FEC6C3, 5B9E08EC78).
+2016-11-23 07:07:54,660   INFO  [SP 4 Site - 0:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:54,660   INFO  [SP 4 Site - 0:4] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:54,697   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:54,697   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE INDEX town_idx ON towns (state_num, county_num)
+2016-11-23 07:07:54,740   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923249151, catalog hash 7257FEC6C3, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:54,740   INFO  [MP Site - 0:8] HOST: To: catalog hash: 71332F62A5, deployment hash: 5B9E08EC78
+2016-11-23 07:07:54,751   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:54,751   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:54,751   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:54,751   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:54,751   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:54,751   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:54,751   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:54,763   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:54,763   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:54,764   INFO  [SP 2 Site - 0:2] HOST: Globally updating the current application catalog and deployment (new hashes 71332F62A5, 5B9E08EC78).
+2016-11-23 07:07:54,794   INFO  [SP 2 Site - 0:2] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:54,794   INFO  [SP 2 Site - 0:2] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:54,827   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:54,827   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE INDEX people_idx ON people (state_num, county_num)
+2016-11-23 07:07:54,832   ERROR [Ad Hoc Planner - 0] COMPILER: [Ad Hoc DDL Input:1]: DDL Error: "user lacks privilege or object not found: PEOPLE" in statement starting on lineno: 1
+2016-11-23 07:07:54,832   ERROR [Ad Hoc Planner - 0] COMPILER: [null]: [Ad Hoc DDL Input:1]: DDL Error: "user lacks privilege or object not found: PEOPLE"
+2016-11-23 07:07:54,832   INFO  [Ad Hoc Planner - 0] HOST: A request to update the database catalog and/or deployment settings has been rejected. More info returned to client.
+2016-11-23 07:07:54,847   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:54,847   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE TABLE people (
+ state_num TINYINT NOT NULL,
+ county_num SMALLINT NOT NULL,
+   state VARCHAR(20),
+   county VARCHAR(64),
+   population INTEGER
+ )
+2016-11-23 07:07:54,891   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923265535, catalog hash 71332F62A5, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:54,891   INFO  [MP Site - 0:8] HOST: To: catalog hash: D3233DAD8E, deployment hash: 5B9E08EC78
+2016-11-23 07:07:54,897   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:54,897   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:54,897   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:54,897   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:54,897   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:54,897   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:54,897   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:54,908   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:54,908   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:54,913   INFO  [SP 2 Site - 0:2] HOST: Globally updating the current application catalog and deployment (new hashes D3233DAD8E, 5B9E08EC78).
+2016-11-23 07:07:54,940   INFO  [SP 2 Site - 0:2] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:54,940   INFO  [SP 2 Site - 0:2] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:54,973   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:54,973   INFO  [Ad Hoc Planner - 0] COMPILER: 	PARTITION TABLE towns ON COLUMN state_num
+2016-11-23 07:07:55,020   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923281919, catalog hash D3233DAD8E, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:55,020   INFO  [MP Site - 0:8] HOST: To: catalog hash: F8EA356860, deployment hash: 5B9E08EC78
+2016-11-23 07:07:55,031   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:55,031   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:55,031   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:55,032   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:55,032   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:55,032   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:55,032   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:55,042   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:55,042   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:55,043   INFO  [SP 1 Site - 0:1] HOST: Globally updating the current application catalog and deployment (new hashes F8EA356860, 5B9E08EC78).
+2016-11-23 07:07:55,073   INFO  [SP 1 Site - 0:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:55,073   INFO  [SP 1 Site - 0:1] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:55,104   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:55,104   INFO  [Ad Hoc Planner - 0] COMPILER: 	PARTITION TABLE people ON COLUMN state_num
+2016-11-23 07:07:55,142   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923298303, catalog hash F8EA356860, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:55,142   INFO  [MP Site - 0:8] HOST: To: catalog hash: 909108D9A6, deployment hash: 5B9E08EC78
+2016-11-23 07:07:55,148   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:55,148   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:55,148   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:55,148   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:55,148   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:55,148   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:55,149   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:55,164   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:55,164   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:55,166   INFO  [SP 1 Site - 0:1] HOST: Globally updating the current application catalog and deployment (new hashes 909108D9A6, 5B9E08EC78).
+2016-11-23 07:07:55,203   INFO  [SP 1 Site - 0:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:55,204   INFO  [SP 1 Site - 0:1] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:55,232   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:55,232   INFO  [Ad Hoc Planner - 0] COMPILER: 	ALTER TABLE towns DROP COLUMN state
+2016-11-23 07:07:55,271   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923314687, catalog hash 909108D9A6, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:55,271   INFO  [MP Site - 0:8] HOST: To: catalog hash: 939FD0671A, deployment hash: 5B9E08EC78
+2016-11-23 07:07:55,276   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:55,276   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:55,277   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:55,277   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:55,277   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:55,277   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:55,277   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:55,288   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:55,288   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:55,289   INFO  [SP 3 Site - 0:3] HOST: Globally updating the current application catalog and deployment (new hashes 939FD0671A, 5B9E08EC78).
+2016-11-23 07:07:55,318   INFO  [SP 3 Site - 0:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:55,318   INFO  [SP 3 Site - 0:3] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:55,352   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:55,352   INFO  [Ad Hoc Planner - 0] COMPILER: 	ALTER TABLE people DROP COLUMN state
+2016-11-23 07:07:55,391   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923331071, catalog hash 939FD0671A, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:55,391   INFO  [MP Site - 0:8] HOST: To: catalog hash: 775A99782B, deployment hash: 5B9E08EC78
+2016-11-23 07:07:55,406   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:55,410   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:55,410   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:55,410   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:55,410   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:55,410   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:55,410   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:55,415   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:55,415   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:55,420   INFO  [SP 1 Site - 0:1] HOST: Globally updating the current application catalog and deployment (new hashes 775A99782B, 5B9E08EC78).
+2016-11-23 07:07:55,464   INFO  [SP 1 Site - 0:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:55,464   INFO  [SP 1 Site - 0:1] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:55,500   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:55,500   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE TABLE nws_event (
+   id VARCHAR(256) NOT NULL,
+   type VARCHAR(128),
+   severity VARCHAR(128),
+   SUMMARY VARCHAR(1024),
+   starttime TIMESTAMP,
+   endtime TIMESTAMP,
+   updated TIMESTAMP,
+   PRIMARY KEY (id)
+)
+2016-11-23 07:07:55,540   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923347455, catalog hash 775A99782B, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:55,540   INFO  [MP Site - 0:8] HOST: To: catalog hash: 55CBC78724, deployment hash: 5B9E08EC78
+2016-11-23 07:07:55,546   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:55,546   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:55,546   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:55,546   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:55,546   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:55,546   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:55,546   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:55,559   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:55,560   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:55,562   INFO  [SP 7 Site - 0:7] HOST: Globally updating the current application catalog and deployment (new hashes 55CBC78724, 5B9E08EC78).
+2016-11-23 07:07:55,593   INFO  [SP 7 Site - 0:7] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:55,593   INFO  [SP 7 Site - 0:7] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:55,628   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:55,628   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE INDEX nws_event_idx ON nws_event (id)
+2016-11-23 07:07:55,676   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923363839, catalog hash 55CBC78724, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:55,676   INFO  [MP Site - 0:8] HOST: To: catalog hash: B047A9BA15, deployment hash: 5B9E08EC78
+2016-11-23 07:07:55,682   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:55,682   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:55,682   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:55,682   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:55,682   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:55,682   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:55,682   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:55,697   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:55,697   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:55,699   INFO  [SP 1 Site - 0:1] HOST: Globally updating the current application catalog and deployment (new hashes B047A9BA15, 5B9E08EC78).
+2016-11-23 07:07:55,731   INFO  [SP 1 Site - 0:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:55,731   INFO  [SP 1 Site - 0:1] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:55,765   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:55,765   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE TABLE local_event (
+    state_num TINYINT NOT NULL,
+    county_num SMALLINT NOT NULL,
+    id VARCHAR(256) NOT NULL
+)
+2016-11-23 07:07:55,810   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923380223, catalog hash B047A9BA15, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:55,810   INFO  [MP Site - 0:8] HOST: To: catalog hash: 09CAA515D8, deployment hash: 5B9E08EC78
+2016-11-23 07:07:55,816   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:55,816   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:55,816   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:55,816   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:55,816   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:55,816   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:55,816   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:55,832   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:55,832   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:55,855   INFO  [SP 1 Site - 0:1] HOST: Globally updating the current application catalog and deployment (new hashes 09CAA515D8, 5B9E08EC78).
+2016-11-23 07:07:55,870   INFO  [SP 1 Site - 0:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:55,870   INFO  [SP 1 Site - 0:1] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:55,907   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:55,907   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE INDEX local_event_idx ON local_event (state_num, county_num)
+2016-11-23 07:07:55,952   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923396607, catalog hash 09CAA515D8, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:55,952   INFO  [MP Site - 0:8] HOST: To: catalog hash: 844BFDDDCF, deployment hash: 5B9E08EC78
+2016-11-23 07:07:55,958   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:55,958   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:55,958   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:55,958   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:55,958   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:55,958   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:55,958   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:55,975   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:55,976   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:55,977   INFO  [SP 0 Site - 0:0] HOST: Globally updating the current application catalog and deployment (new hashes 844BFDDDCF, 5B9E08EC78).
+2016-11-23 07:07:56,008   INFO  [SP 0 Site - 0:0] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:56,008   INFO  [SP 0 Site - 0:0] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:56,043   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:56,043   INFO  [Ad Hoc Planner - 0] COMPILER: 	PARTITION TABLE local_event ON COLUMN state_num
+2016-11-23 07:07:56,092   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923412991, catalog hash 844BFDDDCF, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:56,092   INFO  [MP Site - 0:8] HOST: To: catalog hash: 499734393C, deployment hash: 5B9E08EC78
+2016-11-23 07:07:56,103   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:56,103   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:56,104   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:56,104   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:56,104   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:56,104   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:56,104   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:56,117   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:56,117   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:56,121   INFO  [SP 4 Site - 0:4] HOST: Globally updating the current application catalog and deployment (new hashes 499734393C, 5B9E08EC78).
+2016-11-23 07:07:56,148   INFO  [SP 4 Site - 0:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:56,148   INFO  [SP 4 Site - 0:4] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:56,172   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:56,172   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE PROCEDURE FindAlert AS
+   SELECT id, updated FROM nws_event
+   WHERE id = ?
+2016-11-23 07:07:56,263   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923429375, catalog hash 499734393C, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:56,264   INFO  [MP Site - 0:8] HOST: To: catalog hash: 7886E0A6B8, deployment hash: 5B9E08EC78
+2016-11-23 07:07:56,269   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:56,269   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:56,269   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:56,269   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:56,269   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:56,269   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:56,269   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:56,280   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:56,280   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:56,281   INFO  [SP 0 Site - 0:0] HOST: Globally updating the current application catalog and deployment (new hashes 7886E0A6B8, 5B9E08EC78).
+2016-11-23 07:07:56,317   INFO  [SP 0 Site - 0:0] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:56,317   INFO  [SP 0 Site - 0:0] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:07:56,348   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:56,348   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE PROCEDURE FROM CLASS LoadAlert
+2016-11-23 07:07:56,354   ERROR [Ad Hoc Planner - 0] COMPILER: [Ad Hoc DDL Input]: Cannot load class for procedure: LoadAlert
+   caused by:
+   java.lang.ClassNotFoundException: LoadAlert
+2016-11-23 07:07:56,354   ERROR [Ad Hoc Planner - 0] COMPILER: [Ad Hoc DDL Input]: VoltDB DDL Error: "Cannot load class for procedure: LoadAlert
+   caused by:
+   java.lang.ClassNotFoundException: LoadAlert" in statement starting on lineno: 1
+2016-11-23 07:07:56,354   ERROR [Ad Hoc Planner - 0] COMPILER: [null]: [Ad Hoc DDL Input]: VoltDB DDL Error: "Cannot load class for procedure: LoadAlert
+   caused by:
+   java.lang.ClassNotFoundException: LoadAlert"
+2016-11-23 07:07:56,354   INFO  [Ad Hoc Planner - 0] HOST: A request to update the database catalog and/or deployment settings has been rejected. More info returned to client.
+2016-11-23 07:07:56,374   INFO  [Ad Hoc Planner - 0] COMPILER: Applying the following DDL to cluster:
+2016-11-23 07:07:56,374   INFO  [Ad Hoc Planner - 0] COMPILER: 	CREATE PROCEDURE GetAlertsByLocation 
+   PARTITION ON TABLE local_event COLUMN state_num
+   AS SELECT w.id, w.summary, w.type, w.severity,
+             w.starttime, w.endtime 
+             FROM nws_event as w, local_event as l
+             WHERE l.id=w.id and 
+                   l.state_num=? and l.county_num = ? and
+                   w.endtime > TO_TIMESTAMP(MILLISECOND,?)
+             ORDER BY w.endtime
+2016-11-23 07:07:56,431   INFO  [MP Site - 0:8] HOST: New catalog update from: Catalog: TXN ID 3619631923445759, catalog hash 7886E0A6B8, deployment hash 5B9E08EC78
+
+2016-11-23 07:07:56,431   INFO  [MP Site - 0:8] HOST: To: catalog hash: B1A33DA021, deployment hash: 5B9E08EC78
+2016-11-23 07:07:56,437   INFO  [SP 2 Site - 0:2] HOST: Site 0:2 completed data precheck.
+2016-11-23 07:07:56,440   INFO  [SP 3 Site - 0:3] HOST: Site 0:3 completed data precheck.
+2016-11-23 07:07:56,440   INFO  [SP 1 Site - 0:1] HOST: Site 0:1 completed data precheck.
+2016-11-23 07:07:56,440   INFO  [SP 4 Site - 0:4] HOST: Site 0:4 completed data precheck.
+2016-11-23 07:07:56,440   INFO  [SP 5 Site - 0:5] HOST: Site 0:5 completed data precheck.
+2016-11-23 07:07:56,440   INFO  [SP 6 Site - 0:6] HOST: Site 0:6 completed data precheck.
+2016-11-23 07:07:56,440   INFO  [SP 7 Site - 0:7] HOST: Site 0:7 completed data precheck.
+2016-11-23 07:07:56,447   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 completed data and catalog precheck.
+2016-11-23 07:07:56,448   INFO  [SP 0 Site - 0:0] HOST: Site 0:0 acknowledged data and catalog prechecks.
+2016-11-23 07:07:56,457   INFO  [SP 4 Site - 0:4] HOST: Globally updating the current application catalog and deployment (new hashes B1A33DA021, 5B9E08EC78).
+2016-11-23 07:07:56,479   INFO  [SP 4 Site - 0:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2016-11-23 07:07:56,479   INFO  [SP 4 Site - 0:4] HOST: RSS limit: 80% (12,44 GB)
+2016-11-23 07:24:02,223   WARN  [Thread-2] CONSOLE: The VoltDB server will shut down due to a control-C or other JVM exit.
