@@ -1,0 +1,8 @@
+#DO NOT MODIFY THIS FILE
+#Wed Nov 23 05:24:42 GMT+00:00 2016
+org.voltdb.path.snapshots=/home/alumnos/vbotas/Escritorio/practicaVoltDB/PracticaVoltDB/voltdbroot/snapshots
+org.voltdb.path.command_log_snapshot=/home/alumnos/vbotas/Escritorio/practicaVoltDB/PracticaVoltDB/voltdbroot/command_log_snapshot
+org.voltdb.path.voltdbroot=/home/alumnos/vbotas/Escritorio/practicaVoltDB/PracticaVoltDB/voltdbroot
+org.voltdb.path.dr_overflow=/home/alumnos/vbotas/Escritorio/practicaVoltDB/PracticaVoltDB/voltdbroot/dr_overflow
+org.voltdb.path.export_overflow=/home/alumnos/vbotas/Escritorio/practicaVoltDB/PracticaVoltDB/voltdbroot/export_overflow
+org.voltdb.path.command_log=/home/alumnos/vbotas/Escritorio/practicaVoltDB/PracticaVoltDB/voltdbroot/command_log
