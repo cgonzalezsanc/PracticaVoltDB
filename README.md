@@ -149,3 +149,9 @@ El comportamiento del programa dependerá de muchos factores como por ejemplo, c
 ### estadosSeveridad
 
 Procedimiento que devuelve el nombre de los estados que tengan la severidad que se pase como argumento del procedimiento. Será necesario realizar el procedimiento anterior para ejecutarlo, es decir, compilar el código con `javac`, envolverlo con `jar`, cargarlo con un `load classes` y añadirlo al schema mediante `CREATE PROCEDURE FROM CLASS estadosSeveridad`.
+
+###eventosEstado2013
+
+Procedimiento almacenado que devuelve el número de eventos de un estado que se le pasará como argumento al procedimiento. El procedimiento consiste en los siguiente:
+Comparará el "id" de los eventos de las tablas "local_event" y "nws_event" mediante un JOIN, después realizamos otro JOIN con la tabla "states" y comparará el "state_num" de esta tabla con el "state_num" del resultado del JOIN anterior, condicionado a que los datos de las columnas "starttime" y "endtime" de la tabla "nws_event" cumplan las condiciones impuestas y que el numero de estado coincida con el pasado como parámetro al procedimiento.
+Como se indica en el procedimiento, es posible mejorarlo haciendo que el año que queremos comprobar se pase como parámetro (Posible futura mejora).
